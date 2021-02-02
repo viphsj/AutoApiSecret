@@ -2,17 +2,17 @@
 name: Auto Api SR
 
 on: 
-  #release:
-  #  types: [published]
-  #push:
-  #  tags:
-  #  - 'v*'
+  release:
+    types: [published]
+  push:
+    tags:
+    - 'v*'
   #  branches: 
   #    - master
   schedule:
     - cron: "0 1,5,8 * * 1-5"
-  #watch:
-  #  types: [started]
+  watch:
+    types: [started]
    
 jobs:
   build:
